@@ -387,7 +387,6 @@ section.video-class .video-content{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
 }
 
 
@@ -395,6 +394,7 @@ section.video-class .name{
   font-family: 'satoshi', sans-serif;
   font-size:2.2em;
   font-weight: 900;
+  line-height: 1.0;
   
 }
 
@@ -402,6 +402,7 @@ section.video-class .subtitle{
   font-family: 'roboto mono';
   font-size:small;
   font-weight: 300;
+  line-height: 1.5;
   
 }
 
@@ -438,3 +439,17 @@ section.video-class .grid{
   height: auto;
 }
 
+@media (max-width: 600px){
+
+  section.video-class .video-content{
+    width: 330px;
+  }
+
+  section.video-class .name{
+    font-family: 'satoshi', sans-serif;
+    font-size:2.2em;
+    font-weight: 900;
+    line-height: 1.0;
+    
+  }
+}
