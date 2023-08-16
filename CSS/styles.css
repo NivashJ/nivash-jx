@@ -175,6 +175,11 @@ section.hero .home-wrapper .ctm:hover {
 }
 
 
+#downloadable{
+  text-decoration: none;
+  color: black;
+}
+
 section.about {
   height: 100vh;
   width: 100vw;
