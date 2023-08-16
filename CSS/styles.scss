@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap');
+
+$undercolor: pink;
+$undertransition: all .5s cubic-bezier(1,.25,0,.75) 0s;
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+    padding:0;
+}
+
+.navbar{
+    padding:0;
+    margin:0;
+    width:100vw;
+    position:fixed;
+    top:0;
+    z-index: 100;
+   
+    .navcontent{
+        color:black;
+        font-family: recoleta;
+        display:flex;
+        justify-content: space-around;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .navcontent li a{
+        text-decoration: none;
+        color: black;
+        transition: all 0.15s ease-out;
+        position: relative;
+     
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: $undercolor;
+            background-color: #f00;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: $undertransition;
+            transition: $undertransition;
+            }
+
+            &:hover:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            }
+          
+    }
+
+    .navcontent li a:hover{
+        color:#F76C6C;
+    }
+
+}
+
+
+section.hero{
+    background-color: white;
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+
+    .home-wrapper{
+        background-color:white;
+        color: black;
+        font-family: recoleta light;
+        padding: 10%;
+
+        p{
+            font-family: roboto mono;
+        }
+
+        .sentence{
+            color:black;
+            display: flex;
+        }
+
+        h1.name{
+            color: #F76C6C;
+            display: flex;  
+           
+        }
+
+     
+
+        .ctm{
+            height:65px;
+            width: 140px;
+            border: 2.5px solid #F76C6C;
+            border-radius:15px;
+            margin:0;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            transition: box-shadow .3s;
+            
+        }
+
+        .ctm:hover{
+            color:#FFFFFF;
+            background-color: #F76C6C;
+            box-shadow: 7px 7px 0px #c53c3c; 
+
+        }
+
+
+    }
+
+}
+
+
+section.about{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+
+    .about-wrapper{
+        background-color:white;
+        padding:10%;
+
+        .me-heading{
+            color:black;
+            font-family: recoleta;
+        }
+
+        .me-content{
+            color: black;
+            font-family: roboto mono;
+        }
+    }
+
+}
+
+section.projects{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+
+    .projects-wrapper{
+        background-color:white;
+        padding:10%;
+        
+
+        .projects-heading{
+            color:black;
+            font-family: recoleta;
+        }
+
+        .projects-content{
+            color:black;
+            font-family: roboto mono;
+        }
+
+        .streetimage{
+            height: 450px;
+            width:auto;
+            cursor: pointer;
+            transition: transform 250ms;
+        }
+
+        .streetimage :hover{
+            transform: translateY(-30px);
+        }
+    }
+}
+
+section.footer{
+    height:10vh;
+    width:100vw;
+    display:flex;
+    
+
+    .footer-wrapper{
+        background-color:white;
+        display:flex;
+
+        .footer-content{
+            width:100vw;
+            color:black;
+            font-family: roboto mono;
+            font-size: x-small;
+            display:flex;
+            justify-content:center;
+            
+        }
+
+
+    }
+}
+
+
+

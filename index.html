@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" href="images/N_logo.001.png">
+    <title>Nivash</title>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="navbar">
+            <ul class="navcontent">
+                <li><a href="/index.html">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+
+
+        <section class="hero">
+            <div class="home-wrapper">
+                <div class="home-content">
+
+                    <div class="intro-animation">
+                    <h1 class="sentence" id="sentence"></h1>
+                   <!-- <h1 class="name">nivash</h1> -->
+                    </div>
+                    
+                    <div class="intro">
+                    <h5>Linguistics and Multilingual Studies | NTU <br>
+                        Mass Communication | NP </h5>
+                    </div>
+                    <div class="intro-p">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dignissimos doloremque facilis, earum sunt voluptate repellat. Libero omnis excepturi quisquam neque aspernatur! </p>
+                    </div>
+                    
+                    <div class="ctm">
+                        <h3>contact me</h3>
+                    </div>
+
+                    
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about" id="about">
+
+            <div class="about-wrapper">
+                <div class="me-heading">
+                <h1 class="about-me">/ about me<hr></h1>
+                </div>
+                <div class="me-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, debitis sapiente 
+                        perferendis eos explicabo nam libero dolorem, harum deleniti praesentium, quaerat.
+                </div>
+                <div class="profile-image">
+                    <!--<img class="pfp" src = "images/Nivash-LMS-photo.png"> -->
+                </div>
+                      </p>
+            </div>
+
+        </section>
+
+
+        <section class="projects" id="projects">
+            <div class="projects-wrapper">
+                <div class="projects-heading">
+                    <h1>/ projects<hr></h1>
+                </div>
+                <div class="projects-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, debitis sapiente 
+                        perferendis eos explicabo nam libero dolorem, harum deleniti praesentium, quaerat.</p>
+                 </div>
+
+                 <div class="docs">
+                    <table class="table-projects">
+                        <tr>
+                            <td class="name"> <a class="link" href="/Projects_ST.html">The Straits Times</a></td>
+                            <td class="meta"> photojournalism ~ 2016/17</td>
+                        </tr>
+                        </a>
+                        <tr>
+                            <td class="name"><a class="link" href="/Projects_CNA.html">Channel News Asia</a></td>
+                            <td class="meta"> Tv documentary ~ 2016</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><a class="link" href="#">Cine65 III</a></td>
+                            <td class="meta">film ~ 2015</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><a class="link" href="cine65IV.html">Cine65 IV</a></td>
+                            <td class="meta">film ~ 2017</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><a class="link" href="#">A broken pencil</a></td>
+                            <td class="meta">film ~ 2019</td>
+                        </tr>
+                        <tr>
+                            <td class="name"><a class="link" href="projects_larynx.html">Larynx model</a></td>
+                            <td class="meta">3d modelling ~ 2022</td>
+                        </tr>
+                    </table>
+                 </div>
+
+
+            <div class="gridcards">
+                <img class="streetimage" src="images/image1Street.png">
+            </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-wrapper">
+                <div class="footer-content">
+                    <p>built and designed by nivash joyvin xavier</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+<script>
+
+
+    var i = 0;
+    var txt = 'hello, my name is Nivash';
+    var speed = 50;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("sentence").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, 40);
+      }
+    }
+    typeWriter();
+
+</script>
+
+<script>
+    ScrollReveal().reveal('.about-wrapper', { origin: 'bottom', duration: 1000, distance: '150%'});
+    ScrollReveal().reveal('.projects-wrapper', { origin: 'bottom', duration: 1000, distance: '150%', reset: true});
+</script>
+
+
+</html>
