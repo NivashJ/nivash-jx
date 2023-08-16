@@ -466,4 +466,8 @@ section.video-class .grid{
     margin-bottom:5%;
   }
 
+  section.hero{
+    height: 110vh;
+  }
+
 }
