@@ -16,6 +16,7 @@ body {
 }
 
 
+
 .navbar {
   padding: 0;
   margin: 0;
@@ -351,6 +352,10 @@ section.footer .footer-wrapper .footer-content {
 /*Projects subpage*/
 
 
+.video-class{
+  height: 100vh;
+  width: 100vw;
+}
 
 .video-wrapper{
   background-color: white;
