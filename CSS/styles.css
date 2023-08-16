@@ -20,6 +20,10 @@ body {
   min-height: 100vh;
 }
 
+#index-wrapper{
+  padding-left: 5%;
+  padding-right:5%;
+}
 
 
 .navbar {
