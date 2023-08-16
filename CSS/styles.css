@@ -356,8 +356,10 @@ section.footer .footer-wrapper .footer-content {
   background-color: white;
   padding: 10%;
   height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
+  line-height: 2.0;
 }
 
 section.video-class .video-content{
