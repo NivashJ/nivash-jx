@@ -452,4 +452,14 @@ section.video-class .grid{
     line-height: 1.0;
     
   }
+
+  .image-ss{
+    height: auto;
+    width: 100%;
+    flex-shrink:2;
+    flex-wrap:wrap;
+    margin-top:5%;
+    margin-bottom:5%;
+  }
+
 }
