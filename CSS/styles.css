@@ -466,8 +466,23 @@ section.video-class .grid{
     margin-bottom:5%;
   }
 
-  section.hero{
-    height: 110vh;
-  }
+ #sentence{
+  font-size:x-large;
+ }
 
+ h5{
+  font-size: small;
+ }
+
+ section.hero{
+  font-size: small;
+ }
+
+ section.about{
+  font-size: small;
+ }
+
+ section.projects{
+  font-size: small;
+ }
 }
