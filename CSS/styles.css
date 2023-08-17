@@ -13,6 +13,8 @@ body {
   padding: 0;
   text-wrap: balance;
   scroll-snap-type: y mandatory;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 #page-container {
@@ -429,6 +431,55 @@ section.video-class .content-writeup{
   margin-bottom:5%;
 }
 
+/*for the st page*/
+.stvideo-class{
+  height: auto;
+  width: 100vw;
+}
+
+.stvideo-wrapper{
+  background-color: white;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 10%;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  line-height: 2.0;
+}
+
+section.stvideo-class .video-content{
+  background-color: white;
+  padding-top:none;
+  width: 664px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.stvideo-class .name{
+  font-family: 'satoshi', sans-serif;
+  font-size:2.2em;
+  font-weight: 900;
+  line-height: 1.0;
+  
+}
+
+section.stvideo-class .subtitle{
+  font-family: 'roboto mono';
+  font-size:small;
+  font-weight: 300;
+  line-height: 1.5;
+  
+}
+
+section.stvideo-class .content-writeup{
+  font-family: 'Inter', 'sans-serif';
+  font-size:medium;
+  font-weight: 400;
+}
 
 /*grid sample below*/
 :root {
@@ -444,8 +495,9 @@ section.video-class .content-writeup{
 
 .container {
   max-width: 1400px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 h2 {
@@ -477,10 +529,7 @@ h2 {
   margin-right: 10px;
 }
 
-.card:hover {
-  color: var(--white);
-  background: var(--red);
-}
+
 
 .card .card-title {
   font-size: 20px;
@@ -557,6 +606,28 @@ h2 {
 }
 
 
+
+
+
+
+/*Photo gallery*/
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 10px;
+  grid-auto-flow: dense;
+  object-fit: contain;
+
+}
+
+.grid-wrapper li.landscape {
+  grid-column-end: span 2;
+}
+   
+
+
+
 @media (max-width: 600px){
 
   section.video-class .video-content{
@@ -564,6 +635,18 @@ h2 {
   }
 
   section.video-class .name{
+    font-family: 'satoshi', sans-serif;
+    font-size:2.2em;
+    font-weight: 900;
+    line-height: 1.0;
+    
+  }
+
+  section.stvideo-class .video-content{
+    width: 330px;
+  }
+
+  section.stvideo-class .name{
     font-family: 'satoshi', sans-serif;
     font-size:2.2em;
     font-weight: 900;
