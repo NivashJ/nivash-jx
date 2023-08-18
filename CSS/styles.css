@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 
@@ -514,6 +515,11 @@ h2 {
   scroll-snap-type: x mandatory;
 }
 
+.card:hover img {
+height:700px;
+width:auto;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -537,8 +543,8 @@ h2 {
 }
 
 .card .card-content {
-  margin: 20px 0;
-  max-width: 85%;
+  margin: 0;
+  max-width: 100%;
 }
 
 .card .card-link-wrapper {
