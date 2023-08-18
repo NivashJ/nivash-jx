@@ -105,13 +105,14 @@ section.hero .home-wrapper {
   color: black;
   font-family: 'satoshi', sans-serif;
   font-weight: 500;
-  padding: 10%;
+  padding: 5%;
   max-width: 40%;
 }
 
 section.hero .home-wrapper p {
   font-family: roboto mono;
   font-size: 0.9em;
+  line-height: 1.6;
 }
 
 section.hero .home-wrapper .sentence {
@@ -216,6 +217,7 @@ section.about .about-wrapper {
   justify-content: space-between;
   width: 100vw;
   scroll-snap-type: y mandatory;
+  max-width: 40%;
 }
 
 section.about .about-wrapper .me-heading {
@@ -231,6 +233,7 @@ section.about .about-wrapper .me-content {
   color: black;
   font-family: roboto mono;
   scroll-snap-type: y mandatory;
+  line-height: 1.6;
 }
 
 section.about .about-wrapper .pfp {
@@ -238,8 +241,9 @@ section.about .about-wrapper .pfp {
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
-  flex: none;
-  float: right;
+  position: absolute;
+  right: 0px;
+  
   scroll-snap-type: y mandatory;
 }
 
@@ -262,7 +266,9 @@ section.projects {
 section.projects .projects-wrapper {
   background-color: white;
   padding: 10%;
+  max-width: 50%;
 }
+
 
 section.projects .projects-wrapper .projects-heading {
   color: black;
@@ -273,6 +279,7 @@ section.projects .projects-wrapper .projects-heading {
 section.projects .projects-wrapper .projects-content {
   color: black;
   font-family: roboto mono;
+  line-height: 1.6;
   
 }
 
@@ -778,4 +785,14 @@ img {
   margin-bottom:5%;
 
  }
+}
+
+@media (min-width: 800px){
+
+  #index-wrapper{
+    width:364px;
+
+  }
+
+ 
 }
